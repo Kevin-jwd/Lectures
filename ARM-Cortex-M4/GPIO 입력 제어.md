@@ -44,7 +44,7 @@ ___
 ---
 
 - **~={orange}AHB1 (GPIOC) CLK Enable=~**
-    ![](Pasted%20image%2020260720083906.png)
+    ![](Pasted_image_20260720083906.png)
 - **~={orange}PORTC boundary address : 0x4002 0800 - 0x4002 0BFF=~**
     ![](Pasted%20image%2020260720083919.png)
 - **~={orange}Input Register (IDR)=~**
