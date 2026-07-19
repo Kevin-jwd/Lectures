@@ -1,0 +1,8 @@
+# Obsidian 내부 작업 공간 및 캐시 제외
+workspace.json
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+
+# 노트(.md)만 순수하게 백업
+.obsidian/
