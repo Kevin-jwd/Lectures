@@ -46,7 +46,7 @@ ___
 - **<span style = "color: orange">AHB1 (GPIOC) CLK Enable</span>**
     ![](Pasted_image_20260720083906.png)
 - **<span style="color: orange">PORTC boundary address : 0x4002 0800 - 0x4002 0BFF</span>**
-    ![](Pasted_image_20260720083919.png)
+    ![image](Pasted_image_20260720083919.png)
 
 - **<span style="color: orange">Input Register (IDR)</span>**
     ![](Pasted%20image%2020260720083936.png)
