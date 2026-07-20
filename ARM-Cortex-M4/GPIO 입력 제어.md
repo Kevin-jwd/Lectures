@@ -49,7 +49,7 @@ ___
     <img src="../assets/Pasted_image_20260720083919.png"/>
 
 - **<span style="color: orange">Input Register (IDR)</span>**
-    <img src="assets/Pasted_image_20260720083936.png"/>
+    <img src="../assets/Pasted_image_20260720083936.png"/>
 
 ---
 
@@ -59,6 +59,6 @@ ___
 	  Macro_Write_Block(GPIOC→PUPDR, 0x3, 0x1, );
 	```
 	
-    <img src="assets/Pasted_image_20260720083948.png"/>
-    <img src="assets/Pasted_image_20260720083959.png/>
+    <img src="../assets/Pasted_image_20260720083948.png"/>
+    <img src="../assets/Pasted_image_20260720083959.png/>
 
