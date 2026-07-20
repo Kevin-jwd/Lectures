@@ -44,12 +44,12 @@ ___
 ---
 
 - **<span style = "color: orange">AHB1 (GPIOC) CLK Enable</span>**
-    ![](Pasted_image_20260720083906.png)
+    ![](assets/Pasted_image_20260720083906.png)
 - **<span style="color: orange">PORTC boundary address : 0x4002 0800 - 0x4002 0BFF</span>**
-    ![image](Pasted_image_20260720083919.png)
+    ![image](assets/Pasted_image_20260720083919.png)
 
 - **<span style="color: orange">Input Register (IDR)</span>**
-    ![](Pasted%20image%2020260720083936.png)
+    ![](assets/Pasted_image_20260720083936.png)
 
 ---
 
@@ -59,5 +59,6 @@ ___
 	  Macro_Write_Block(GPIOC→PUPDR, 0x3, 0x1, );
 	```
 	
-    ![](Pasted%20image%2020260720083948.png)
-    ![](Pasted%20image%2020260720083959.png)
+    ![](assets/Pasted_image_20260720083948.png)
+    ![](assets/Pasted_image_20260720083959.png)
+
