@@ -56,7 +56,7 @@ ___
 ## 과제
 
 - ```c
-	  Macro_Write_Block(GPIOC→PUPDR, 0x3, 0x1, );
+	  Macro_Write_Block(GPIOC→PUPDR, 0x3, 0x1, 14);
 	```
 	
     <img src="../assets/Pasted_image_20260720083948.png"/>
