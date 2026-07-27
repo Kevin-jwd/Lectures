@@ -10,6 +10,7 @@ ___
 - <b>`SCL`</b>: Clock (master가 제공, 동기 통신)
 - <b>`SDA</b>: 양방향 데이터 (Half duplex, 동시에 주고받는 건 불가능)
 <br>
+
 ___
 ### 16bit 통신 방식
 
@@ -20,6 +21,7 @@ ___
 ##### Write
 - Start ->device 주소 (7bit + 1bit(R/W)) -> _ACK_ -> register 주소 (8bit) -> _ACK_ -> ... 
 <br>
+
 ##### Read
 - Start ->device 주소 (7bit + 1bit(R/W)) -> _ACK_ -> register 주소 (8bit) -> _ACK_ -> Repeat Start -> device 주소 -> register 주소 -> _DATA_ -> ACK
 <br>
