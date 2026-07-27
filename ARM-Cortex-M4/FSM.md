@@ -26,7 +26,7 @@ ___
 ## 예제
 <br>
 
-<img src="assets/Motor_FSM.png"/>
+<img src="../assets/Motor_FSM.png"/>
 
 - <b>이벤트</b>
 	- key pressed (short<200msec, long)
