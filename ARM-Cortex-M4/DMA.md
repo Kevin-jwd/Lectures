@@ -9,7 +9,7 @@ ___
 ### 과정
 <br>
 
-![](assets/DMA_img1.png)
+![](../assets/DMA_img1.png)
 <br>
 
 - <b>1</b>: `BR (Bus Request)`: DMA->CPU 메모리 버스 제어권 요구
@@ -29,13 +29,13 @@ ___
 <br>
 
 - <b>최소한의 동작을 위한 설정 정보</b>
-	 ![](assets/DMA_img2.png)
+	 ![](../assets/DMA_img2.png)
 	 - M2M (mem to mem), M2P (mem to 주변장치), P2M (주변장치 to mem), <i>P2P</i>
 
 <br>
 
 - <b>다양한 DMA 활용을 위해서는 다음 설정이 추가적으로 필요</b>
-	![](assets/DMA_img3.png)
+	![](../assets/DMA_img3.png)
 
 <br>
 
