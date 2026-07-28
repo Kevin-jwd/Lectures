@@ -29,14 +29,20 @@ ___
 <br>
 
 - <b>최소한의 동작을 위한 설정 정보</b>
-	 ![](../assets/DMA_img2.png)
-	 - M2M (mem to mem), M2P (mem to 주변장치), P2M (주변장치 to mem), <i>P2P</i>
+<br>
+
+ ![](../assets/DMA_img2.png)
+
+<br>
+
+ - M2M (mem to mem), M2P (mem to 주변장치), P2M (주변장치 to mem), <i>P2P</i>
 
 <br>
 
 - <b>다양한 DMA 활용을 위해서는 다음 설정이 추가적으로 필요</b>
-	![](../assets/DMA_img3.png)
 
+ ![](../assets/DMA_img3.png)
+ 
 <br>
 
 ___
