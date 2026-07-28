@@ -2,7 +2,7 @@ ___
 - Serial Peripheral Interface 버스
 <br>
 
-- ![](assets/SPI%20pin%20map.png)
+- <img src="../assets/SPI%20pin%20map.png"/>
 
 <br>
 
@@ -20,7 +20,9 @@ ___
 ___
 ### 프로토콜
 <br>
-![](assets/SPI%20protocol.png)
+
+<img src="../assets/SPI%20protocol.png"/>
+
 <br>
 
 - CPOL (Clock Polarity), CPHA (Clock Phase)의 선택에 의해 4가지 인터페이스가 가능
