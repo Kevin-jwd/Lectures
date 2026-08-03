@@ -183,4 +183,33 @@ int f1(int xx, int yy, char cc) { //함수 내용 } // 정의
 - <b>overloading</b>: 같은 이름의 함수 여러 개를 메모리에 적재하는 것
 - <i>return만 다른 이름의 함수는 만들 수 없음</i>
 - 컴파일러는 전달되는 argument의 타입, 개수를 판단하여 호출 함수 결정
+<br>
 
+#### Template
+<br>
+
+- Parameter의 타입을 인자의 타입에 맞추기 위함
+```C++
+template<typename T1, typename T2>
+auto f1(T1 t1, T2 t2) { return t1 + t2; }
+
+cout << f1<double, int>(5.8, 4) << endl;   // Template Type 지정 방식 (권장)
+```
+
+- argument의 타입에 맞춰지므로 리턴에만 타입 이름 사용은 불가
+- `auto`: complier로 하여금 return값의 자료형을 유추하도록 만듦
+<br>
+
+#### 동적 메모리 할당
+<br>
+
+- `new`: 인스턴스를 만들고 초기화한 후 인스턴스 주소를 반환
+	- `int *p = new int;`
+	- `char *q = new char[4];`
+	- `int (*r)[4] = new int[2][4];`
+	- `st *x = new st[4];`
+- `delete`: 인스턴스를 삭제 
+	- `delete p;`
+	- `delete q[];`
+	- `delete r[];`
+	- `delete x[];`
