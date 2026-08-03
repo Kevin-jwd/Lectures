@@ -204,6 +204,7 @@ cout << f1<double, int>(5.8, 4) << endl;   // Template Type 지정 방식 (권�
 <br>
 
 - `new`: 인스턴스를 만들고 초기화한 후 인스턴스 주소를 반환
+	- new 뒤에 타입이 와야하며, 좌변 타입과 일치해야 함
 	- `int *p = new int;`
 	- `char *q = new char[4];`
 	- `int (*r)[4] = new int[2][4];`
@@ -213,3 +214,74 @@ cout << f1<double, int>(5.8, 4) << endl;   // Template Type 지정 방식 (권�
 	- `delete q[];`
 	- `delete r[];`
 	- `delete x[];`
+<br>
+
+#### Call by Reference 
+<br>
+
+- <b>Reference &</b>: 변수의 이름의 별칭 (alias)를 만들어 변수를 공유
+```C++
+int a = 10;
+int &b = a;            // b는 a의 별칭
+int *p = &a;           // p는 a의 주소
+```
+<br>
+
+- <b>Call by value</b>
+- 값을 복사하여 전달 받음, 원본 수정 X
+```C++
+void f1(int x)
+{
+	x = 10;
+}
+```
+<br>
+
+- <b>Call by address</b>
+- 주소 값을 전달받음, 원본을 고칠 수 있으나 간접연산 발생
+```C++
+void f2(int *p)
+{
+	p[1] = 10;
+}
+```
+<br>
+
+- <b>Call by reference</b>
+- 원본 수정 가능, 간접 연산이 발생하지 않음
+```C++
+void f3(int &b)
+{
+	b = 10;
+}
+```
+<br>
+
+- 원본을 고치지 않고 참조만 하려면 `const`키워드 사용
+<br>
+
+#### Ranged for Loop
+<br>
+
+- 배열 or 컨테이너에서 item을 꺼내는 for loop
+```C++
+int a[4] = { 10, 20, 30, 40 };
+
+for(int x : a) 
+{ 
+	cout << x << endl; 
+}
+```
+<br>
+
+- `const auto &a`: Ranger for에서 많이 사용
+<br>
+
+#### auto
+<br>
+
+- 컴파일러가 형식을 잡아주도록 하는 타입
+- 단, 동적 타입, 배열 요소에는 사용 불가
+```C++
+auto f[] = { 1, 3, 5, 6 };        // 요소들의 타입만으로 판단 불가
+```
