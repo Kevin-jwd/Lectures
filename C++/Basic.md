@@ -52,12 +52,12 @@ namespace my
 
 - `::` 연산자를 사용하지 않고 적용될 namespace 지정
 ```C++
-using namespace my;
+using namespace my; // using directive
 
 x = 10, y = 20;
 ```
 ```C++
-using my::x;
+using my::x; // using declaration
 using my::y;
 
 x = 10, y = 20;
@@ -145,8 +145,6 @@ int b(20);
 
 ```C++
 int c{ 30 };
-```
-```C++
 int d[2] = {10, 20, 30};
 int e[2]{40, 50, 60};
 ```
@@ -154,8 +152,6 @@ int e[2]{40, 50, 60};
 - 단일 값을 갖는 변수에도 <b>aggregate</b> 타입 initializer 사용 가능
 <br>
 
-```
-<br>
 ```C++
 st g{ 30, 'A' };
 ```
@@ -203,7 +199,7 @@ cout << f1<double, int>(5.8, 4) << endl;   // Template Type 지정 방식 (권�
 #### 동적 메모리 할당
 <br>
 
-- `new`: 인스턴스를 만들고 초기화한 후 인스턴스 주소를 반환
+- `new`: 인스턴스를 만들고 초기화한 후 인스턴스 <b>주소를 반환</b>
 	- new 뒤에 타입이 와야하며, 좌변 타입과 일치해야 함
 	- `int *p = new int;`
 	- `char *q = new char[4];`
@@ -222,13 +218,13 @@ cout << f1<double, int>(5.8, 4) << endl;   // Template Type 지정 방식 (권�
 - <b>Reference &</b>: 변수의 이름의 별칭 (alias)를 만들어 변수를 공유
 ```C++
 int a = 10;
-int &b = a;            // b는 a의 별칭
+int &b = a;            // b는 a의 별칭,  b = a
 int *p = &a;           // p는 a의 주소
 ```
 <br>
 
 - <b>Call by value</b>
-- 값을 복사하여 전달 받음, 원본 수정 X
+- 원본 수정 X, 값을 복사하여 전달 받음 
 ```C++
 void f1(int x)
 {
@@ -238,7 +234,7 @@ void f1(int x)
 <br>
 
 - <b>Call by address</b>
-- 주소 값을 전달받음, 원본을 고칠 수 있으나 간접연산 발생
+- 원본 수정 O, 주소 값을 전달받음, 간접연산 발생
 ```C++
 void f2(int *p)
 {
@@ -248,7 +244,7 @@ void f2(int *p)
 <br>
 
 - <b>Call by reference</b>
-- 원본 수정 가능, 간접 연산이 발생하지 않음
+- 원본 수정 O, 간접 연산이 발생하지 않음
 ```C++
 void f3(int &b)
 {
