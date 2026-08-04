@@ -142,8 +142,8 @@ void mart_calc::change_tax(double tax)
 - <u>모든 인스턴스에서 공통으로 사용하는 변수</u>로 사용
 <br>
 
-- static 선언 시 초기화는 금지
-- static은 반드시 외부에서 정의
+- `static` 선언 시 초기화는 금지
+- `static`은 반드시 외부에서 정의
 <br>
 
 #### Static Member 함수 (Class 함수)
@@ -151,3 +151,48 @@ void mart_calc::change_tax(double tax)
 
 - instance와 무관한 함수
 - class함수에서는 class 변수(static), global 변수, 함수만 접근 가능
+<br>
+
+#### 초기화 List
+<br>
+
+- <b>기본 형식</b>: `생성자:변수(값) {};`
+<br>
+
+```C++
+A(int a, int b)
+{
+	int x = a;
+	int y = b;
+}
+```
+```C++
+A(int a, int b): x(a), y(b) { };
+```
+- `const`는 대입이 안되고 초기화밖에 안되므로 이런 방식을 주로 사용
+<br>
+
+#### 상수 멤버 함수 (Const Member Function)
+<br>
+
+
+- member data를 <i>read-only</i>로만 접근할 수 있는 함수
+- <b>Const instance</b>
+	- 멤버 데이터 수정 금지
+	- 멤버 함수 호출 금지
+
+<br>
+
+- <b>Const Member Function</b>은 절대 멤버 데이터를 변경하지 않는다고 확신하기 때문에
+  <b>Const Instance</b>에서 호출해도 확신 가능
+<br>
+
+#### Generic Class
+<br>
+
+- <b>Generic Function</b>: 입력되는 인자의 type에 따라 동작하는 함수
+- <b>Generic Class</b>: Generic Function과 유사하게 생성된 클래스
+<br>
+
+- instance 생성 시 반드시 T 타입을 전달해야 한다 (ex. `<int>`)
+- instance 생성 시 정의된 parameter는 변하지 않음
