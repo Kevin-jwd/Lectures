@@ -17,3 +17,13 @@ ___
 	- <b>Operator overloading</b>: 새로 생성한 클래스에 대한 기존 연산자 동작 재정의 가능
 <br>
 
+#### 상속에서의 Access Modifier
+<br>
+
+| 접근 지정자 | class 내부 | child class | class 외부 | 
+| --- | --- | --- | --- | 
+| `public` | O | O | O | 
+| `protected` | O | O | X | 
+| `private` | O | X | X | 
+<br>
+

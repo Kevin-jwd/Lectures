@@ -6,6 +6,7 @@ ___
 - 반복적으로 수행되는 동작을 단위 동작으로 묶어서 <b>Procedure</b>라고 함
 
 <br>
+
 #### OOP: Object Oriented Programming
 <br>
 
@@ -14,14 +15,15 @@ ___
 - <b>Class</b>: 생성할 기능 모듈을 요약(abstraction, 추상화)
 <br>
 - <b>Pros</b>
-	- 각 instance는 독립적으로 동작 가능
-	- 각 instance는 변형하여 사용 가능
-	- Class로 child class 생성 가능 (확장성)
+	- 각 instance는 <b>독립</b>적으로 동작 가능
+	- 각 instance는 <b>변형</b>하여 사용 가능
+	- Class로 child class 생성 가능 (<b>확장성</b>)
 	- 만든 class로 추가적인 instance 생성 가능 (instantiation)
 - <b>Cons</b>
 	- 메모리 낭비
 	- instance 호출 시간이 더 길어짐
 <br>
+
 #### OOP 4대 특성
 <br>
 
@@ -31,6 +33,7 @@ ___
 <b>4. 캡슐화 (Encapsulation)</b>: 정보 은닉 (ex. private, public, ...)
 
 <br>
+
 #### 구조체를 이용한 Object 생성
 <br>
 
@@ -54,6 +57,7 @@ private:
 	- `public`: 어디서든 접근 가능 (default)
 
 <br>
+
 #### 기본 Class, Object(Instance) 생성 및 사용
 <br>
 
@@ -99,6 +103,7 @@ void mart_calc::buy(int price) { }
 void mart_calc::change_tax(double tax)
 {
 	this->tax = tax;
+	// mart_calc::tax = tax;
 }
 ```
 - <b>생성</b>
@@ -130,6 +135,8 @@ void mart_calc::change_tax(double tax)
 #### 소멸자 (Destructor)
 <br>
 
+- <b>기본 형식</b>: `~클래스 이름`
+- parameter, return 없음
 - Object를 전역으로 생성했다면, 프로그램이 종료될때까지 소멸되지 않음
 - Object가 유효범위를 벗어나면 소멸자가 자동으로 호출됨
 - 직접 호출해도 소멸과는 무관 (단순 함수 호출)
