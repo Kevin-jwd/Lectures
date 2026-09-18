@@ -1,39 +1,28 @@
+___
 # EX01-06 Quoting
+
+- <b>인용 부호</b> : 큰 따옴표와 작은 따옴표
 
 ```shell
 #!/bin/bash
 
-  
-
 var=hello
 
-  
-
 touch aaa bbb
-
 touch "aaa bbb"
 
-  
-
 echo $var
-
 echo "$var"
 
-  
-
 ls /etc/issue*
-
 ls "/etc/issue*"
 
-  
-
 touch 'ccc ddd'
-
 echo '$var'
-
 ls '/etc/issue*'
 ```
 
 ![](../../assets/Pasted%20image%2020260918103413.png)
 - `ls "/etc/issue*"`: `""`는 $, 백틱, 역슬래시 외에는 문자 그대로 인식
 - `ls '/etc/issue*'`: `''`는 모든 문자를 그대로 인식
+
