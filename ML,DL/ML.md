@@ -11,9 +11,9 @@ ___
 
 ### 유형
 
-- Supervised Learning: label이 있는 데이터로 학습 (결과로 데이터 예측)
-- unsupervised Learning: lable이 없는 데이터로 학습 (공통 구조/특징 예측)
-- Reinforcement Learning: 보상시스템으로 학습
+- Supervised Learning(지도 학습): label이 있는 데이터로 학습 (결과로 데이터 예측)
+- unsupervised Learning(비지도 학습): label이 없는 데이터로 학습 (공통 구조/특징 예측)
+- Reinforcement Learning(강화 학습): 보상시스템으로 학습
 
 #### Neuron / Perceptron
 
