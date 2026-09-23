@@ -472,6 +472,8 @@ if (WIFEXITED(status)) {
 
 ### `fork()` + `exec()`
 
+관련 예제: [[Linux/과제/0922/EX02-06 여러 grep 자식 프로세스 실행|EX02-06 여러 grep 자식 프로세스 실행]]
+
 ```text
 부모 프로세스
      │
