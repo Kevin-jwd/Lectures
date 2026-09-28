@@ -34,3 +34,12 @@ if (err != 0) {
 ## 핵심
 
 **서로 다른 스레드의 `errno`는 충돌하지 않는다.** 다만 자기 스레드에서 발생한 오류도 다른 함수 호출 전에 확인하거나 저장해야 한다.
+
+___
+
+```c
+errno is defined by the ISO C standard to be  a  modifiable  lvalue  of
+       type  int,  and  must not be explicitly declared; errno may be a macro.
+       errno is thread-local; setting it in one thread  does  not  affect  its
+       value in any other thread.
+```
