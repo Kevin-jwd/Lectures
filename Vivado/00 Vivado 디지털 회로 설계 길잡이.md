@@ -11,7 +11,7 @@
 | [[Vivado/FPGA와 RTL 설계]] | FPGA, HDL, 레지스터 간 데이터 흐름 |
 | [[Vivado/Basys3 보드와 FPGA 구성]] | 보드 자원, 100 MHz 클록, 구성 저장 방식 |
 | [[Vivado/Vivado 환경 준비와 프로젝트 생성]] | Board 파일, RTL Project, 소스 종류 |
-| [[Vivado/Verilog 모듈과 게이트 회로]] | 포트, assign, 모듈 계층, 블로킹·논블로킹 |
+| [[Vivado/Verilog 모듈과 게이트 회로]] | 포트, 모델링 방식·게이트 프리미티브, 결합·반복 연산자, 블로킹·논블로킹 |
 | [[Vivado/XDC 핀 제약과 포트 매핑]] | HDL 포트와 스위치·LED 핀 연결 |
 | [[Vivado/합성과 구현]] | Netlist, Synthesis, Place·Route |
 | [[Vivado/비트스트림과 보드 프로그래밍]] | .bit 생성, JTAG 다운로드, 구성 유지 |
